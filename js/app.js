@@ -1,7 +1,7 @@
 (() => {
     $('#profile-ripple').ripples({
         resolutions: 512,
-        dropRadius: 10
+        dropRadius: 15
     });
 
     // Bars
