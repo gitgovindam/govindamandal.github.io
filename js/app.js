@@ -110,7 +110,7 @@
 function downloadCV() {
     const link = document.createElement('a');
     link.target = '_blank';
-    link.download = true;
+    link.download = 'Govinda-Mandal-Full-Stack-Developer';
     link.href = '../pdf/Govinda_Mandal_Full_Stack_Developer.pdf'
     link.click();
 }
