@@ -679,17 +679,21 @@ section.skills .content p.role {
 .experience-detail {
   position: absolute;
   top: 50%;
-  left: 100%;
+  left: 105%;
   transform: translateY(-50%);
-  width: 400px;
+  width: 600px;
   background-color: var(--ternary);
   color: black;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
   z-index: 1;
+}
+
+.experience-detail::before {
+  background: linear-gradient(123deg, #962eff 0%, #0073e5 50%, #007e94 100%);
 }
 
 .experience .item:hover .experience-detail {
@@ -723,15 +727,22 @@ section.skills .content p.role {
 }
 
 .card-header {
-  background-color: #3498db;
+  background-color: var(--dark-blue);
   color: white;
   padding: 20px;
   text-align: center;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-header .company-logo {
+    width: 50px; /* Adjust the size as needed */
+    height: 50px;
+    border-radius: 50%;
 }
 
 .card-header .job-title {
   margin: 0;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .card-header .company {
@@ -739,24 +750,29 @@ section.skills .content p.role {
   font-size: 18px;
 }
 
+.card-header p.location {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: white !important;
+}
+
 .card-body {
   padding: 20px;
 }
 
-.card-body .duration {
-  font-size: 14px;
-  color: #888;
-  margin: 0 0 10px;
+.card-body .card-child {
+  color: rgb(6, 100, 195) !important;
+  margin: 0 0 10px 10px;
 }
 
 .card-body .description {
   list-style-type: disc; /* Bullet points */
   padding-left: 20px; /* Indentation for the bullets */
-  margin: 0;
+  margin: 0 0 0 16px;
 }
 
 .card-body .description li {
-  font-size: 16px;
+  font-size: 12px;
   color: #333;
   margin-bottom: 10px;
 }

@@ -4,6 +4,8 @@
         dropRadius: 15
     });
 
+    document.getElementById('year').innerHTML = new Date().getFullYear();
+
     // Bars
     const bars = document.querySelectorAll('.progress-bar');
     
