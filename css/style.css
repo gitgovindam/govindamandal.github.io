@@ -49,7 +49,6 @@ h6 {
 }
 
 .company a {
-  text-decoration: none;
   color: var(--fade);
   font-size: medium;
   font-weight: bolder;
