@@ -151,8 +151,16 @@ function downloadCV() {
     const link = document.createElement('a');
     link.target = '_blank';
     link.download = 'Govinda-Mandal-Full-Stack-Developer';
-    link.href = '../pdf/Govinda_Mandal_Full_Stack_Developer.pdf'
+    link.href = '../pdf/Govinda-Mandal-Full-Stack-Developer.pdf'
     link.click();
+}
+
+function printResume() {
+    const printWindow = window.open('../pdf/Govinda-Mandal-Full-Stack-Developer.pdf', '__blank', 'width=800,height=1000,left=500,top=200');
+    setTimeout(() => {
+        printWindow.focus();
+        printWindow.print();
+    }, 0)
 }
 
 function sendEmail() {
