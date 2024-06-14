@@ -107,6 +107,30 @@
         autoplay: true
     });
 
+    // Exprience popup
+
+    const items = document.querySelectorAll('.experience .item');
+
+    items.forEach((item) => {
+        item.addEventListener('mouseover', function() {
+            const experience = item.querySelector('.experience-detail');
+            experience.classList.add('active');
+        });
+        item.addEventListener('mouseleave', function() {
+            const experience = item.querySelector('.experience-detail');
+            experience.classList.remove('active');
+        });
+    });
+
+    // Close Experience Details
+
+    const closes = document.querySelectorAll('.close');
+    console.log(closes);
+    closes.forEach((close) => {
+        close.addEventListener('click', function() {
+            close.parentElement.parentElement.classList.remove('active')
+        })
+    })
 })();
 
 function downloadCV() {
